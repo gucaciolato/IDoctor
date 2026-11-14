@@ -1,0 +1,12 @@
+node_modules/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+.impeccable/config.local.json
+.impeccable/questions/
+.impeccable/mocks/
+.impeccable/review/
+__pycache__/
+*.pyc
