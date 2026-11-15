@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><title>C · Cápsula-K</title>
+  <path d="M22 58V20a14 14 0 0 1 28 0v38z" fill="#0B6B52"/>
+  <path d="M22 62h28v38a14 14 0 0 1-28 0z" fill="#FF5A3C"/>
+  <path d="M58 60L96 18" stroke="#0B6B52" stroke-width="14" stroke-linecap="round"/>
+  <path d="M58 60L96 102" stroke="#FF5A3C" stroke-width="14" stroke-linecap="round"/>
+</svg>

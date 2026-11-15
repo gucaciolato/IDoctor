@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><title>A · Pulso</title>
+  <path d="M6 60H38" stroke="#0B6B52" stroke-width="9" stroke-linecap="round"/>
+  <path d="M82 60H114" stroke="#0B6B52" stroke-width="9" stroke-linecap="round"/>
+  <path d="M46 56V20a14 14 0 0 1 28 0v36z" fill="#0B6B52"/>
+  <path d="M46 64h28v36a14 14 0 0 1-28 0z" fill="#FF5A3C"/>
+  <path d="M38 60H48l5-10 7 20 5-10h17" fill="none" stroke="#0B6B52" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

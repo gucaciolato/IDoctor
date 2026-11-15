@@ -58,4 +58,5 @@ O sistema do INPI recusa conexões de fora do Brasil, então esta etapa não pô
 
 - **Kura** remete a *cura*; **vi** a *vida* (e a "vi": "vi um horário e marquei").
 - Personalidade: **ágil, confiável, humana**. Rápida como um app de entrega, séria como um consultório.
-- O logo deve unir **cura + vida + medicina**: a cruz médica, o batimento ou pulso, a folha ou broto (vida), sem cair no clichê do estetoscópio genérico.
+- **Logo escolhido (v1):** cápsula (medicina, cura) atravessada por um batimento (vida). Estudos descartados: folhas brotando da cápsula ("não gostei da folha"), cruz de cápsulas e cápsula em forma de K. Ver [`brand/`](../brand/README.md).
+- **Sem verde** no logo e no sistema de design: coral-pulso + azul-noite. Verde só no status "Confirmado".

@@ -9,7 +9,7 @@ Estimativas para um time enxuto (2 a 3 devs + 1 designer meio período). Cada fa
 | Avaliação do modelo de receita | ✅ [00-avaliacao-da-conversa.md](00-avaliacao-da-conversa.md) |
 | Plano de produto, arquitetura, observabilidade e compliance | ✅ docs 01 a 04 |
 | Nome e domínios | ✅ **Kuravi**. Registrar `kuravi.com.br` e `kuravi.app` + checagem manual no INPI ([06-marca-e-nome.md](06-marca-e-nome.md)) |
-| Identidade visual no Canva | 🔄 Em andamento |
+| Identidade visual (Design do Claude + PDF para aprovação) | ✅ v1 em [`brand/`](../brand/README.md), aguardando aprovação de Gu e Bruno |
 | Protótipo do site em HTML/CSS/JS | ⏳ Depois da identidade |
 | Entrevistas: 20 clínicas e 30 pacientes | ⏳ |
 | Parecer jurídico (cobrança + LGPD) | ⏳ |

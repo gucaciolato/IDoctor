@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs><mask id="md1"><rect width="120" height="120" fill="#fff"/><path d="M6 66H20l7-16 9 32 7-16h71" fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/></mask></defs>
+  <g mask="url(#md1)"><g transform="translate(70 56) rotate(45)">
+    <path d="M-22 0V-30a22 22 0 0 1 44 0V0z" fill="#0B6B52"/>
+    <path d="M-22 0H22V30a22 22 0 0 1-44 0z" fill="#FF5A3C"/>
+  </g></g>
+  <path d="M6 66H20l7-16 9 32 7-16h71" fill="none" stroke="#0E2A24" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

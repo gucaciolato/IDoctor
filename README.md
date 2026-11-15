@@ -22,7 +22,7 @@ Fase atual: **0 · Ideia, marca e validação.** Veja o [roadmap](docs/05-roadma
 ```
 .
 ├── docs/              # planejamento
-├── brand/             # identidade visual (Canva + exportações)
+├── brand/             # identidade visual: logo SVG, PDF v1, manual
 ├── prototype/         # protótipo do site em HTML/CSS/JS puro
 └── .claude/skills/    # impeccable, ui-ux-pro-max, brand
 ```

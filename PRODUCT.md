@@ -40,7 +40,8 @@ Brazilian private healthcare. Clinics juggle phone, WhatsApp and the front desk;
 ## Brand Commitments
 
 - Name: **Kuravi** (cura + vida). Repository codename: iDoctor. Never use "iFood" or other third-party marks in public copy.
-- Logo must relate to cura + vida **and** to medicine; designed in Canva (user requirement).
+- Logo: a capsule (medicine, cure) crossed by a heartbeat line (life). Files and tokens in `brand/README.md`; canvas built with Claude Design (Canva generation is disabled on the user's team).
+- **No green** in the logo or design system: coral-pulso `#FF5A3C` leads, azul-noite `#14254A` anchors. Green only where strictly necessary (the "Confirmado" status).
 - Voice: agile, trustworthy, human. Fast like a delivery app, serious like a doctor's office. Plain Portuguese, no medical hype.
 
 ## Evidence on Hand
