@@ -10,6 +10,14 @@ Abra `index.html` no navegador, ou sirva a pasta:
 cd prototype && python3 -m http.server 8080   # http://localhost:8080
 ```
 
+## PDF para aprovação
+
+[`kuravi-site-prototipo-v1.pdf`](kuravi-site-prototipo-v1.pdf): cada seção em web (1440 px) e celular (390 px), com o que aprovar e página de assinatura. Para gerar de novo após ajustes:
+
+```bash
+NODE_PATH=$(npm root -g) node prototype/aprovacao/gerar-pdf.js
+```
+
 ## Seções
 
 Herói (oferta + início do cadastro + painel da recepção ao vivo) → o que trava a agenda → como funciona (rota com 3 paradas) → Modo Encaixe (simulador) → preço (sem mensalidade, regras da Solicitação Verificada) → CFM e LGPD → cadastro da clínica → lista de espera de pacientes → perguntas frequentes → rodapé. Banner de cookies com opcionais negados por padrão.
