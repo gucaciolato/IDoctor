@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kuravi · Pacientes novos para a sua clínica, sem mensalidade</title>
+  <meta name="description" content="A Kuravi leva até a sua clínica pacientes que já sabem que você atende o plano deles. Sem mensalidade: você só paga por solicitação verificada.">
+  <meta name="theme-color" content="#14254A">
+  <link rel="icon" href="assets/img/kuravi-simbolo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&family=Signika:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="topo__barra conteiner">
+      <a class="marca" href="#inicio" aria-label="Kuravi, página inicial">
+        <img src="assets/img/kuravi-simbolo.svg" alt="" width="40" height="40">
+        <span class="marca__nome">kuravi</span>
+      </a>
+      <button class="topo__menu" type="button" aria-expanded="false" aria-controls="navegacao">
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span>Menu</span>
+      </button>
+      <nav id="navegacao" class="topo__nav" aria-label="Principal">
+        <ul>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#encaixe">Modo Encaixe</a></li>
+          <li><a href="#preco">Preço</a></li>
+          <li><a href="#regras">CFM e LGPD</a></li>
+          <li><a href="#paciente">Sou paciente</a></li>
+        </ul>
+        <a class="botao botao--coral botao--pequeno" href="#cadastro">Cadastrar clínica</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section id="inicio" class="heroi" aria-labelledby="heroi-titulo">
+      <div class="conteiner heroi__grade">
+        <div class="heroi__texto">
+          <h1 id="heroi-titulo"><span class="linha">Sua agenda cheia.</span> <span class="linha quebra">Sem mensalidade.</span></h1>
+          <p class="heroi__oferta">A Kuravi leva até a sua clínica pacientes que já sabem que você atende o plano deles. Você só paga quando alguém com WhatsApp verificado pede um horário.</p>
+
+          <form class="inicio-rapido" id="inicio-rapido" novalidate aria-label="Começar o cadastro da clínica">
+            <div class="campo">
+              <label for="ir-clinica">Nome da clínica</label>
+              <input id="ir-clinica" name="clinica" autocomplete="organization" required>
+            </div>
+            <div class="campo">
+              <label for="ir-whatsapp">WhatsApp</label>
+              <input id="ir-whatsapp" name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(11) 90000-0000">
+            </div>
+            <button class="botao botao--coral" type="submit">Quero pacientes novos</button>
+          </form>
+          <p class="heroi__garantia">As 10 primeiras solicitações são por nossa conta. Sem fidelidade.</p>
+        </div>
+
+        <div class="painel" aria-label="Exemplo do painel da recepção, com dados fictícios">
+          <div class="painel__cabecalho">
+            <span class="painel__titulo">Solicitações · hoje</span>
+            <span class="painel__ao-vivo"><span class="ponto" aria-hidden="true"></span>ao vivo</span>
+          </div>
+          <article class="pedido" aria-label="Solicitação verificada KV-7K2Q">
+            <div class="pedido__topo">
+              <span class="selo-verificado">
+                <svg aria-hidden="true" viewBox="0 0 20 20" width="16" height="16"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                WhatsApp verificado
+              </span>
+              <span class="pedido__codigo">KV-7K2Q</span>
+            </div>
+            <p class="pedido__nome">Mariana S.</p>
+            <dl class="pedido__dados">
+              <div><dt>Especialidade</dt><dd>Dermatologia</dd></div>
+              <div><dt>Plano</dt><dd>Unimed Nacional</dd></div>
+              <div><dt>Prefere</dt><dd>terça ou quarta, à tarde</dd></div>
+            </dl>
+            <div class="pedido__acoes">
+              <button class="botao botao--noite botao--pequeno" type="button" tabindex="-1">Aceitar terça, 15h40</button>
+              <button class="botao botao--contorno botao--pequeno" type="button" tabindex="-1">Propor outro horário</button>
+            </div>
+          </article>
+          <div class="dia" aria-label="Agenda de terça-feira">
+            <span class="dia__rotulo">Terça · Dra. Ana R.</span>
+            <ol class="dia__slots">
+              <li class="slot slot--ocupado"><span class="hora">14h00</span></li>
+              <li class="slot slot--ocupado"><span class="hora">14h40</span></li>
+              <li class="slot slot--encaixe"><span class="hora">15h40</span><span class="slot__nota">vagou · encaixado</span></li>
+              <li class="slot slot--ocupado"><span class="hora">16h20</span></li>
+            </ol>
+          </div>
+          <p class="painel__nota">Dados fictícios.</p>
+        </div>
+      </div>
+      <div class="linha-guia linha-guia--heroi" aria-hidden="true"><span></span><span></span><span></span></div>
+    </section>
+
+    <section class="dores" aria-labelledby="dores-titulo">
+      <div class="conteiner">
+        <h2 id="dores-titulo">O que trava a agenda hoje</h2>
+        <ul class="dores__lista">
+          <li>
+            <h3>O WhatsApp da recepção não para</h3>
+            <p>"Tem horário?", "Atende meu plano?", "Quanto custa?". As mesmas perguntas o dia inteiro, e o paciente desiste antes da resposta.</p>
+          </li>
+          <li>
+            <h3>Desmarcou em cima da hora</h3>
+            <p>O horário fica vazio porque não dá tempo de ligar para a lista de espera. É faturamento que não volta.</p>
+          </li>
+          <li>
+            <h3>O paciente não sabe se você atende o plano dele</h3>
+            <p>A lista do convênio está desatualizada. Quem procura dermatologia pela Unimed liga para cinco lugares e marca no primeiro que responde.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="como-funciona" class="rota" aria-labelledby="rota-titulo">
+      <div class="conteiner">
+        <h2 id="rota-titulo">Como funciona</h2>
+        <p class="rota__intro">Siga a linha: do paciente que procura até o horário confirmado na sua agenda.</p>
+        <ol class="rota__paradas">
+          <li class="parada">
+            <span class="parada__marco" aria-hidden="true">1</span>
+            <div class="placa">
+              <h3>O paciente encontra quem atende o plano dele</h3>
+              <p>Você informa quais convênios aceita em cada especialidade e com cada profissional. A busca mostra só quem realmente atende.</p>
+            </div>
+          </li>
+          <li class="parada">
+            <span class="parada__marco" aria-hidden="true">2</span>
+            <div class="placa">
+              <h3>A solicitação chega completa</h3>
+              <p>Nome, WhatsApp verificado, especialidade, plano e período preferido. No painel e no WhatsApp da clínica, com um código para conferir.</p>
+            </div>
+          </li>
+          <li class="parada">
+            <span class="parada__marco" aria-hidden="true">3</span>
+            <div class="placa">
+              <h3>Você responde com um toque</h3>
+              <p>Aceite com um horário, proponha outro ou recuse. O paciente confirma pelo app e recebe lembretes, o que diminui as faltas.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="encaixe" class="encaixe" aria-labelledby="encaixe-titulo">
+      <div class="conteiner encaixe__grade">
+        <div class="encaixe__texto">
+          <h2 id="encaixe-titulo">Modo Encaixe: desmarcou, preencheu</h2>
+          <p>Quando um paciente cancela, a recepção abre o encaixe. A Kuravi avisa, em ondas, quem pediu "me avise se vagar antes" naquela especialidade, plano e região. O primeiro que confirmar leva o horário.</p>
+          <p class="encaixe__regra">O encaixe vende rapidez, nunca desconto.</p>
+        </div>
+        <div class="simulador" data-estado="cheio">
+          <div class="simulador__topo">
+            <span>Terça · Dermatologia</span>
+            <span class="simulador__aviso">Simulação com dados fictícios</span>
+          </div>
+          <ol class="simulador__agenda">
+            <li class="s-slot"><span class="hora">14h00</span><span>Paciente agendado</span></li>
+            <li class="s-slot"><span class="hora">14h40</span><span>Paciente agendado</span></li>
+            <li class="s-slot s-slot--alvo"><span class="hora">15h40</span><span class="s-slot__status" id="sim-status">Paciente agendado</span></li>
+            <li class="s-slot"><span class="hora">16h20</span><span>Paciente agendado</span></li>
+          </ol>
+          <div class="simulador__fila" aria-hidden="true">
+            <span class="onda"></span><span class="onda"></span><span class="onda"></span>
+          </div>
+          <p class="simulador__log" id="sim-log" role="status" aria-live="polite">Agenda cheia.</p>
+          <div class="simulador__acoes">
+            <button class="botao botao--coral" type="button" id="sim-iniciar">Simular um cancelamento</button>
+            <button class="botao botao--contorno" type="button" id="sim-reiniciar" hidden>Recomeçar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="preco" class="preco" aria-labelledby="preco-titulo">
+      <div class="conteiner preco__grade">
+        <div>
+          <h2 id="preco-titulo">Sem mensalidade. Sem fidelidade.</h2>
+          <p class="preco__lead">O perfil da clínica é grátis. Você compra créditos e paga por <strong>solicitação verificada</strong>, com valor fixo por especialidade, definido no piloto. As 10 primeiras são por nossa conta.</p>
+          <p class="preco__nota">Nunca cobramos porcentagem da sua consulta.</p>
+        </div>
+        <div class="regras-cobranca">
+          <h3>Quando uma solicitação conta</h3>
+          <ul>
+            <li><strong>Telefone verificado</strong> por código enviado ao paciente.</li>
+            <li><strong>Sem duplicata:</strong> o mesmo paciente pedindo a mesma especialidade em 7 dias conta uma vez só.</li>
+            <li><strong>Entregue a você</strong> no painel e no WhatsApp da clínica, com data e hora.</li>
+            <li><strong>Contestação em 72 horas</strong> se o contato for inválido. O crédito volta sozinho.</li>
+            <li><strong>Teto diário</strong> definido por você. Nada de surpresa na fatura.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="regras" class="regras" aria-labelledby="regras-titulo">
+      <div class="conteiner">
+        <h2 id="regras-titulo">Dentro das regras do CFM e da LGPD</h2>
+        <div class="regras__colunas">
+          <div>
+            <h3>Ética médica</h3>
+            <ul class="lista-marcada">
+              <li>Perfis com CRM/UF e RQE verificados. Especialidade sem RQE não é anunciada.</li>
+              <li>Clínicas mostram o diretor técnico.</li>
+              <li>Ordem dos resultados por critérios públicos. Anúncio pago aparece separado, com o selo "Patrocinado".</li>
+              <li>Sem superlativos, promessas de resultado ou descontos como isca.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Privacidade do paciente</h3>
+            <ul class="lista-marcada">
+              <li>Notificações nunca citam a especialidade: "Você tem uma atualização na Kuravi".</li>
+              <li>A clínica vê só quem pediu horário a ela, e só o necessário.</li>
+              <li>Dados hospedados no Brasil, criptografados e com trilha de acesso.</li>
+              <li>Consentimento separado para dados de saúde, e exclusão a qualquer momento.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cadastro" class="cadastro" aria-labelledby="cadastro-titulo">
+      <div class="linha-guia linha-guia--chegada" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="conteiner cadastro__grade">
+        <div class="cadastro__texto">
+          <h2 id="cadastro-titulo">Cadastre sua clínica</h2>
+          <p>Estamos montando o piloto com poucas clínicas por região. Deixe seus dados e marcamos uma conversa de 20 minutos para mostrar o painel.</p>
+          <ul class="lista-marcada lista-marcada--clara">
+            <li>Resposta por WhatsApp ou e-mail em até 1 dia útil.</li>
+            <li>Não precisa trocar o sistema de agenda que você já usa.</li>
+          </ul>
+        </div>
+
+        <form class="formulario" id="form-clinica" novalidate data-tipo="clinica" data-origem="home-cadastro">
+          <div class="resumo-erros" id="erros-clinica" role="alert" tabindex="-1" aria-labelledby="erros-clinica-titulo" hidden>
+            <h3 id="erros-clinica-titulo">Falta pouco: confira os campos abaixo</h3>
+            <ul></ul>
+          </div>
+          <p class="dica">Campos com * são obrigatórios.</p>
+          <div class="formulario__grade">
+            <div class="campo">
+              <label for="fc-nome">Seu nome *</label>
+              <input id="fc-nome" name="nome" autocomplete="name" required data-erro="Diga como podemos te chamar." aria-describedby="fc-nome-erro">
+              <p class="campo__erro" id="fc-nome-erro"></p>
+            </div>
+            <div class="campo">
+              <label for="fc-clinica">Clínica ou consultório *</label>
+              <input id="fc-clinica" name="clinica" autocomplete="organization" required data-erro="Informe o nome da clínica ou do consultório." aria-describedby="fc-clinica-erro">
+              <p class="campo__erro" id="fc-clinica-erro"></p>
+            </div>
+            <div class="campo">
+              <label for="fc-email">E-mail *</label>
+              <input id="fc-email" name="email" type="email" autocomplete="email" inputmode="email" required data-erro="Informe um e-mail válido, com @ e domínio." aria-describedby="fc-email-erro">
+              <p class="campo__erro" id="fc-email-erro"></p>
+            </div>
+            <div class="campo">
+              <label for="fc-telefone">WhatsApp *</label>
+              <input id="fc-telefone" name="telefone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="(11) 90000-0000" data-erro="Informe um WhatsApp com DDD." aria-describedby="fc-telefone-erro">
+              <p class="campo__erro" id="fc-telefone-erro"></p>
+            </div>
+            <div class="campo campo--largo">
+              <label for="fc-cidade">Cidade e estado *</label>
+              <input id="fc-cidade" name="cidade" autocomplete="address-level2" required placeholder="Ex.: Campinas/SP" data-erro="Informe a cidade e o estado da clínica." aria-describedby="fc-cidade-erro">
+              <p class="campo__erro" id="fc-cidade-erro"></p>
+            </div>
+          </div>
+          <fieldset class="campo">
+            <legend>Especialidades que você atende <span class="opcional">(opcional)</span></legend>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" name="especialidades" value="dermatologia"><span>Dermatologia</span></label>
+              <label class="chip"><input type="checkbox" name="especialidades" value="ginecologia"><span>Ginecologia</span></label>
+              <label class="chip"><input type="checkbox" name="especialidades" value="oftalmologia"><span>Oftalmologia</span></label>
+              <label class="chip"><input type="checkbox" name="especialidades" value="ortopedia"><span>Ortopedia</span></label>
+              <label class="chip"><input type="checkbox" name="especialidades" value="pediatria"><span>Pediatria</span></label>
+              <label class="chip"><input type="checkbox" name="especialidades" value="exames-imagem"><span>Exames de imagem</span></label>
+              <label class="chip"><input type="checkbox" name="especialidades" value="outra"><span>Outra</span></label>
+            </div>
+          </fieldset>
+          <div class="consentimentos">
+            <div class="campo">
+              <label class="caixa" for="fc-lgpd">
+                <input id="fc-lgpd" name="consentimento_lgpd" type="checkbox" value="sim" required data-erro="Para responder, precisamos do seu consentimento." aria-describedby="fc-lgpd-erro">
+                <span>Concordo com a <a href="#privacidade">Política de Privacidade</a> e em ser contatado pela Kuravi sobre este cadastro. *</span>
+              </label>
+              <p class="campo__erro" id="fc-lgpd-erro"></p>
+            </div>
+            <label class="caixa" for="fc-novidades">
+              <input id="fc-novidades" name="aceita_emails" type="checkbox" value="sim">
+              <span>Quero receber novidades da Kuravi por e-mail. Dá para sair quando quiser.</span>
+            </label>
+          </div>
+          <div class="armadilha" aria-hidden="true">
+            <label for="fc-site">Não preencha este campo</label>
+            <input id="fc-site" name="site_web" tabindex="-1" autocomplete="off">
+          </div>
+          <div class="formulario__envio">
+            <button class="botao botao--coral" type="submit">Quero receber pacientes</button>
+            <p class="dica" aria-live="polite" data-status></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="paciente" class="paciente" aria-labelledby="paciente-titulo">
+      <div class="conteiner paciente__grade">
+        <div>
+          <h2 id="paciente-titulo">É paciente?</h2>
+          <p>O app está chegando. Deixe seu contato e avisamos quando houver clínicas que atendem o seu plano na sua cidade.</p>
+        </div>
+        <form class="formulario formulario--compacto" id="form-paciente" novalidate data-tipo="paciente" data-origem="home-paciente">
+          <div class="resumo-erros" id="erros-paciente" role="alert" tabindex="-1" aria-labelledby="erros-paciente-titulo" hidden>
+            <h3 id="erros-paciente-titulo">Falta pouco: confira os campos abaixo</h3>
+            <ul></ul>
+          </div>
+          <div class="formulario__grade">
+            <div class="campo">
+              <label for="fp-contato">E-mail ou WhatsApp *</label>
+              <input id="fp-contato" name="contato" autocomplete="email" required data-erro="Informe um e-mail ou um WhatsApp com DDD." aria-describedby="fp-contato-erro">
+              <p class="campo__erro" id="fp-contato-erro"></p>
+            </div>
+            <div class="campo">
+              <label for="fp-cidade">Cidade *</label>
+              <input id="fp-cidade" name="cidade" autocomplete="address-level2" required data-erro="Informe sua cidade." aria-describedby="fp-cidade-erro">
+              <p class="campo__erro" id="fp-cidade-erro"></p>
+            </div>
+          </div>
+          <div class="campo">
+            <label class="caixa" for="fp-lgpd">
+              <input id="fp-lgpd" name="consentimento_lgpd" type="checkbox" value="sim" required data-erro="Precisamos do seu consentimento para avisar você." aria-describedby="fp-lgpd-erro">
+              <span>Concordo com a <a href="#privacidade">Política de Privacidade</a> e em receber o aviso de lançamento. *</span>
+            </label>
+            <p class="campo__erro" id="fp-lgpd-erro"></p>
+          </div>
+          <div class="armadilha" aria-hidden="true">
+            <label for="fp-site">Não preencha este campo</label>
+            <input id="fp-site" name="site_web" tabindex="-1" autocomplete="off">
+          </div>
+          <div class="formulario__envio">
+            <button class="botao botao--noite" type="submit">Me avise</button>
+            <p class="dica" aria-live="polite" data-status></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="perguntas" aria-labelledby="perguntas-titulo">
+      <div class="conteiner perguntas__grade">
+        <h2 id="perguntas-titulo">Perguntas frequentes</h2>
+        <div class="perguntas__lista">
+          <details>
+            <summary>É mesmo sem mensalidade?</summary>
+            <p>Sim. O perfil é grátis e você paga só pelas solicitações verificadas que receber, com créditos pré-pagos e um teto que você define. Mais para frente haverá um plano opcional com agenda em tempo real; quem não quiser continua sem mensalidade.</p>
+          </details>
+          <details>
+            <summary>Funciona com convênio?</summary>
+            <p>Esse é o centro da Kuravi. Você informa quais planos aceita em cada especialidade e com cada profissional, e o paciente só vê você quando você realmente atende o plano dele.</p>
+          </details>
+          <details>
+            <summary>Preciso trocar o sistema de agenda que já uso?</summary>
+            <p>Não. No piloto, as solicitações chegam no painel da Kuravi e no WhatsApp da clínica. Você marca no sistema que já usa e responde com um toque.</p>
+          </details>
+          <details>
+            <summary>Cobrar por solicitação é permitido pelo CFM?</summary>
+            <p>A Kuravi cobra um valor fixo por um serviço de tecnologia e divulgação, independente de a consulta acontecer, e nunca uma porcentagem dos seus honorários. Estamos validando o modelo com assessoria jurídica especializada antes do lançamento.</p>
+          </details>
+          <details>
+            <summary>Como ficam os dados dos pacientes?</summary>
+            <p>Dados de saúde são sensíveis pela LGPD. Ficam no Brasil, criptografados, com consentimento específico do paciente e acesso registrado. Você recebe só os dados de quem pediu horário à sua clínica.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape" id="privacidade">
+    <div class="conteiner rodape__grade">
+      <div class="rodape__marca">
+        <a class="marca marca--negativa" href="#inicio" aria-label="Kuravi, voltar ao início">
+          <img src="assets/img/kuravi-simbolo-negativo.svg" alt="" width="40" height="40">
+          <span class="marca__nome">kuravi</span>
+        </a>
+        <p>A Kuravi é uma plataforma de tecnologia que conecta pacientes a clínicas. Não presta serviços médicos.</p>
+      </div>
+      <nav aria-label="Rodapé">
+        <ul>
+          <li><a href="#privacidade">Política de Privacidade</a></li>
+          <li><a href="#privacidade">Termos de uso</a></li>
+          <li><a href="#privacidade">Encarregado de dados (LGPD)</a></li>
+          <li><button class="link-botao" type="button" data-abrir-cookies>Preferências de cookies</button></li>
+        </ul>
+      </nav>
+      <p class="rodape__legal">[RAZÃO SOCIAL] · CNPJ [00.000.000/0001-00] · Protótipo para validação, sem envio real de dados.</p>
+    </div>
+  </footer>
+
+  <div class="cookies" id="cookies" role="region" aria-label="Preferências de cookies" hidden>
+    <div class="cookies__caixa">
+      <p>Usamos cookies necessários para o site funcionar. Com a sua permissão, também usamos cookies de medição para entender o que melhorar. <a href="#privacidade">Saiba mais</a>.</p>
+      <div class="cookies__opcoes" id="cookies-opcoes" hidden>
+        <label class="caixa"><input type="checkbox" checked disabled><span>Necessários (sempre ativos)</span></label>
+        <label class="caixa"><input type="checkbox" id="cookie-medicao"><span>Medição de uso (Google Analytics)</span></label>
+      </div>
+      <div class="cookies__acoes">
+        <button class="botao botao--contorno botao--pequeno" type="button" data-cookies="recusar">Recusar opcionais</button>
+        <button class="botao botao--contorno botao--pequeno" type="button" data-cookies="escolher" aria-expanded="false" aria-controls="cookies-opcoes">Escolher</button>
+        <button class="botao botao--noite botao--pequeno" type="button" data-cookies="aceitar">Aceitar todos</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
