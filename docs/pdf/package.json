@@ -1,0 +1,12 @@
+{
+  "name": "kuravi-docs-pdf",
+  "private": true,
+  "description": "Gera os PDFs da documentação com o sistema de design da Kuravi",
+  "scripts": {
+    "gerar": "NODE_PATH=$(npm root -g):./node_modules node gerar-pdfs.js"
+  },
+  "dependencies": {
+    "marked": "14.1.4",
+    "mermaid": "11.4.1"
+  }
+}

@@ -17,6 +17,8 @@ Fase atual: **0 · Ideia, marca e validação.** Veja o [roadmap](docs/05-roadma
 | 06 | [Marca e nome](docs/06-marca-e-nome.md) | Por que não "iDoctor", candidatos, domínios, passo a passo do INPI |
 | — | [PRODUCT.md](PRODUCT.md) | Registro de produto usado pelas skills de design |
 
+**Em PDF, com o sistema de design:** [`docs/pdf/`](docs/pdf/). O volume único é `kuravi-documentacao-completa.pdf`. Para gerar de novo após editar os .md: `cd docs/pdf && npm install && npm run gerar`.
+
 ## Estrutura do repositório
 
 ```

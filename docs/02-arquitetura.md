@@ -31,48 +31,48 @@
 
 ```mermaid
 flowchart LR
-  subgraph Clientes
-    APP[App Flutter<br/>paciente]
-    PORTAL[Portal web<br/>clínica]
-    SITE[Site<br/>Vite + React Router 7]
+  subgraph CLI [Clientes]
+    direction TB
+    APP[App Flutter · paciente]
+    PORTAL[Portal web · clínica]
+    SITE[Site · Vite + React Router 7]
   end
 
-  subgraph srv-app [Servidor de aplicação · Coolify]
-    API[API NestJS]
-    WORK[Workers BullMQ]
+  subgraph APPSRV [srv-app · Coolify]
+    direction TB
+    API[API NestJS + workers]
     N8N[n8n]
-    DIR[Directus]
+    DIR[Directus · blog]
     SMTP[SMTP leve]
   end
 
-  subgraph srv-dados [Servidor de dados]
+  subgraph DADOS [srv-dados]
+    direction TB
     PG[(PostgreSQL + PostGIS)]
     REDIS[(Redis)]
     MINIO[(MinIO · documentos cifrados)]
-    PGCMS[(Postgres do Directus)]
-    PGN8N[(Postgres do n8n)]
+    PGAUX[(Postgres do Directus e do n8n)]
   end
 
-  subgraph srv-obs [Servidor de observabilidade]
-    ES[(Elasticsearch)]
-    KB[Kibana]
-    FLEET[Fleet / APM / OTel]
-  end
+  OBS[srv-obs · Elasticsearch + Kibana + APM]
+  EXT[Push, WhatsApp, SMS]
 
   APP -->|HTTPS + JWT| API
   PORTAL -->|HTTPS + JWT + MFA| API
-  PORTAL <-->|WebSocket| API
-  SITE -->|loader SSR| DIR
-  SITE -->|ação de formulário| N8N
-  API --> PG & REDIS & MINIO
-  WORK --> PG & REDIS
-  WORK -->|push FCM/APNs, WhatsApp, e-mail| EXT[(Provedores externos)]
-  WORK --> SMTP
+  SITE -->|conteúdo| DIR
+  SITE -->|formulários| N8N
+  API --> PG
+  API --> REDIS
+  API --> MINIO
+  API --> EXT
+  API --> SMTP
   N8N --> SMTP
-  N8N -->|leads B2B| PGN8N
-  DIR --> PGCMS
-  API & WORK & N8N & DIR -. logs, traces, métricas .-> FLEET --> ES --> KB
+  N8N --> PGAUX
+  DIR --> PGAUX
+  APPSRV -. logs, traces e métricas .-> OBS
 ```
+
+Detalhes que o diagrama simplifica: os workers BullMQ rodam junto da API e consomem o Redis; o portal também mantém um WebSocket com a API para solicitações em tempo real.
 
 ## Site e formulários (n8n)
 
